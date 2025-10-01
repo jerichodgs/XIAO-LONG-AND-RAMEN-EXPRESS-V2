@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    height: 100vh;
+    background: url("xlre-images/bg-image.png") no-repeat center/cover;
+    animation: fadeIn s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(255, 0, 0, 0.87);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(8px);
+
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.xlre-brand {
+    display: inline-block;
+}
+
+.xlre-logo {
+    font-family: "Trade Winds", Arial, Helvetica, sans-serif;
+
+    position: relative;
+    height: auto;
+    width: 40px;
+    top: 1.5px;
+}
+
+.xlre-title {
+    font-family: "Trade Winds", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    left: 10px;
+}
+
+.xlre-title:hover {
+    color: rgb(219, 219, 219);
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 10px;
+    gap: 30px;
+}
+
+.nav-btns {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+
+    color: white;
+    text-decoration: none;
+}
+
+.nav-btns:hover {
+    color: rgba(255, 255, 255, 0.753);
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+/* Hero Page */
+.hero-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+    background: 
+    linear-gradient(to bottom, rgba(12, 12, 12, 0.5) 20%, rgba(255, 255, 255, 0.808) 100%),
+    url('your-image.jpg') no-repeat center/cover;
+}
+
+.hero-text {
+    position: relative;
+    bottom: 50px;
+}
+
+.hero-xlre-title {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 6em;
+    font-weight: 800;
+
+    
+
+    margin: 0;
+}
+
+.hero-xlre-subtext {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.order {
+    width: 70px;
+    padding: 10px 20px;
+
+
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.order:hover {
+    transform: scale(1.1);
+}
+
+.order-btn {
+    color: rgb(255, 255, 255);
+    font-family: "Inter";
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact {
+    width: 70px;
+    padding: 10px 20px;
+
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact:hover {
+    transform: scale(1.08);
+}
+
+.contact-btn {
+    color: rgb(0, 0, 0);
+    font-family: "Inter";
+    font-weight: 600;
+    text-decoration: none;
+}
