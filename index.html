@@ -4,8 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="xlre-images/xiaologo.png">
+    
     <title>XiaoLong & Ramen Express</title>
 </head>
 <body>
@@ -20,8 +22,13 @@
             <a href="#" class="nav-btns">Home</a>
             <a href="#menu" class="nav-btns">Menu</a>
             <a href="#loc" class="nav-btns">Location</a>
-            <a href="#" class="nav-btns">Contact</a>
-            <a href="#" class="nav-btns">Reviews</a>
+            <a href="#contact" class="nav-btns">Contact</a>
+            <a href="#review" class="nav-btns">Reviews</a>
+            <a href="https://www.facebook.com/profile.php?id=100091732257278" target="blank" class="nav-btns">
+                <button class="nav-order">
+                    <img src="/xlre-images/noodle-bowl.png">
+                </button>
+            </a>
         </div>
 
     </nav>
@@ -109,29 +116,94 @@
         <div class="loc-page-background">
             <img src="/xlre-images/katsu.png" class="katsu" alt="picture of katsudon">
             <img src="/xlre-images/blackgarlic.png" class="black-garlic" alt="black garlic ramen">
+            <img src="/xlre-images/superchashu.png" class="super-chashu" alt="super chashu ramen">
             <div class="loc-container">
                     <h1 class="loc-title">We are located at: </h1>
                     <h2 class="loc-subtext">XiaoLong & Ramen Express, Hangga St, Bulihan, Malolos, 3000 Bulacan</h2>
-                <div class="loc-images">
-                    <img src="/xlre-images/xlre-building.png" id="xlre-b" alt="XiaoLong and Ramen Express Building">
-                    <img src="/xlre-images/xlre-loc.png" id="xlre-m" alt="XiaoLong and Ramen Express Maps">
-                </div>
+                    <div class="loc-images">
+                        <img src="/xlre-images/xlre-building.png" id="xlre-b" alt="XiaoLong and Ramen Express Building">
+                        <img src="/xlre-images/xlre-loc.png" id="xlre-m" alt="XiaoLong and Ramen Express Maps">
+                    </div>
             </div>
         </div>
     </div>
 
-    <div class="contact-page">
+    <div class="contact-page" id="contact">
+        <img src="/xlre-images/redramen.png" class="redramen" alt="Naijiro Red Ramen">
         <div class="contact-layout">
 
             <div class="contact-text">
-
+                <h1>Contact Us!</h1>
+                <div class="socials">
+                    <div class="fb">
+                        <p>XiaoLong and Ramen Express on Facebook</p>
+                        <a href="https://www.facebook.com/profile.php?id=100091732257278" target="_blank">https://www.facebook.com/profile.php?id=100091732257278</a>
+                    </div>
+                    <div class="mc">
+                        <p>Founder and CEO of XiaoLong and Ramen Express: Maria Cecilia Bryant</p>
+                        <a href="https://www.facebook.com/kyeoul" target="_blank">https://www.facebook.com/kyeoul</a>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=100091732257278" target="blank"><button class="msgbutton">Send us a message</button></a>
+                </div>
+                
             </div>
+
             <div class="contact-image">
                 <img src="/xlre-images/xiaolongfam.jpg" class="xiaolongfam" alt="XiaoLong Fam">
             </div>
 
         </div>
     </div>
+
+    <div class="review-page" id="review">
+        <h1 class="review-title">Reviews</h1>
+        <div class="review-cards">
+
+            <div class="card" id="card1">
+                <p class="review-content">"Pang masa ung presyo niya pero pang mamahaling resto ang quality."</p>
+                <div class="image-name">
+                    <img src="/xlre-images/kuyapolzy.jpg" class="review-images">
+                    <div class="name-role">
+                        <p class="reviewer-name">Kuya Polzy</p>
+                        <p class="reviewer-role">Food Blogger</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="card2">
+                <p class="review-content">“Mahahanlintulad ang lasa sa mga commercial ramen at dimsum na atin nang nasubukan!”</p>
+                <div class="image-name">
+                    <img src="/xlre-images/pinoybudg.jpg" class="review-images">
+                    <div class="name-role">
+                        <p class="reviewer-name">Pinoy Budgetarian</p>
+                        <p class="reviewer-role">Food and Travel Blogger</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="card3">
+                <p class="review-content">“Ito na ata ang pinaka murang Japanese at Chinese foods na nakainan ko!”</p>
+                <div class="image-name">
+                    <img src="/xlre-images/papabuds.jpg" class="review-images">
+                    <div class="name-role">
+                        <p class="reviewer-name">Papa Bud's</p>
+                        <p class="reviewer-role">Food and Travel Blogger</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="site-footer">
+            <p>XiaoLong and Ramen Express Official Website</p>
+            <p style="color: rgb(255, 255, 255); margin-right: 150px;">© 2025 KoDevs. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100091732257278" ><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ramennaijiromalolos/" target="_blank" class="icon-margin"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+    </footer>
     <script src = "script.js"></script>
 </body>
 </html>
