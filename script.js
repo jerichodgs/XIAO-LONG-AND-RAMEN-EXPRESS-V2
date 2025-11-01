@@ -1,13 +1,3 @@
-window.addEventListener("beforeunload", () => {
-    localStorage.setItem("scrollPosition", window.scrollY);
-  });
-
-  window.addEventListener("load", () => {
-    const scrollY = localStorage.getItem("scrollPosition");
-    if (scrollY !== null) {
-      window.scrollTo(0, parseInt(scrollY));
-    }
-  });
 
 const buttons = document.querySelectorAll('.category-btn');
 const items = document.querySelectorAll('.menu-item');
@@ -17,7 +7,6 @@ buttons.forEach(button => {
   button.addEventListener('click', () => {
     const category = button.dataset.category;
 
-    // Toggle if the same category is clicked again
     if (activeCategory === category && category !== 'all') {
       activeCategory = 'all';
       buttons.forEach(btn => btn.classList.remove('active'));
@@ -28,14 +17,26 @@ buttons.forEach(button => {
 
     activeCategory = category;
 
-    // Update button states
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 
-    // Filter items
     items.forEach(item => {
       const itemCategory = item.dataset.category;
       item.style.display = (category === 'all' || itemCategory === category) ? 'flex' : 'none';
     });
   });
 });
+
+let lastScrollY = window.scrollY;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down
+      navbar.style.top = '-80px'; // hides the navbar
+    } else {
+      // Scrolling up
+      navbar.style.top = '0';
+    }
+    lastScrollY = window.scrollY;
+  });

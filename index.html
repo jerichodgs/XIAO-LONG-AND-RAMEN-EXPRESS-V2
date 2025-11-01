@@ -9,17 +9,17 @@
     <title>XiaoLong & Ramen Express</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
 
         <div class="xlre-brand">
-            <a href="#home"><img src="xlre-images/xiaologo.png" class="xlre-logo"></a>
-            <a href="#home" class="xlre-title">XiaoLong & Ramen Express</a>
+            <a href="#"><img src="xlre-images/xiaologo.png" class="xlre-logo"></a>
+            <a href="#" class="xlre-title">XiaoLong & Ramen Express</a>
         </div>
 
         <div class="nav-links">
-            <a href="#home" class="nav-btns">Home</a>
-            <a href="#" class="nav-btns">Menu</a>
-            <a href="#" class="nav-btns">Location</a>
+            <a href="#" class="nav-btns">Home</a>
+            <a href="#menu" class="nav-btns">Menu</a>
+            <a href="#loc" class="nav-btns">Location</a>
             <a href="#" class="nav-btns">Contact</a>
             <a href="#" class="nav-btns">Reviews</a>
         </div>
@@ -42,10 +42,10 @@
         </div>
     </div>
 
-    <div class="menu-page">
+    <div class="menu-page" id="menu">
         <div class="menu-page-background">
-            <h1>Our Menu</h1>  
-            <div class="menu-background">
+            <h1 class="menu-title">Our Menu</h1>  
+            <div class="menu-container">
 
                 <div class="category-buttons">
                     <button class="category-btn active" data-category="all">All</button>
@@ -58,49 +58,77 @@
                 </div>
 
                 <div class="menu-items">
-                    <div class="menu-item" data-category="chao-fan">🍜 PORK & SHRIMP SIOMAI</div>
-                    <div class="menu-item" data-category="chao-fan">🍜 BRAISED BEEF</div>
-                    <div class="menu-item" data-category="chao-fan">🍜 SALT & PEPPER PORK</div>
-                    <div class="menu-item" data-category="chao-fan">🍜 JAPANESE SIOMAI</div>
-                    <div class="menu-item" data-category="chao-fan">🍜 SALT & PEPPER CHICKEN</div>
-                    <div class="menu-item" data-category="chao-fan">🍜 SHARK'S FIN</div>
-                    <div class="menu-item" data-category="chao-fan">🍜 PORK & VEGGI DUMPLING</div>
+                    <div class="menu-item" data-category="chao-fan"> PORK & SHRIMP SIOMAI</div>
+                    <div class="menu-item" data-category="chao-fan"> BRAISED BEEF</div>
+                    <div class="menu-item" data-category="chao-fan"> SALT & PEPPER PORK</div>
+                    <div class="menu-item" data-category="chao-fan"> JAPANESE SIOMAI</div>
+                    <div class="menu-item" data-category="chao-fan"> SALT & PEPPER CHICKEN</div>
+                    <div class="menu-item" data-category="chao-fan"> SHARK'S FIN</div>
+                    <div class="menu-item" data-category="chao-fan"> PORK & VEGGI DUMPLING</div>
 
-                    <div class="menu-item" data-category="noodle-soup">🥟 BEEF WONTON NOODLE SOUP</div>
-                    <div class="menu-item" data-category="noodle-soup">🥟 BEEF NOODLE SOUP</div>
-                    <div class="menu-item" data-category="noodle-soup">🥟 WONTON NOODLE SOUP</div>
-                    <div class="menu-item" data-category="noodle-soup">🥟 CHOWMIEN</div>
+                    <div class="menu-item" data-category="noodle-soup"> BEEF WONTON NOODLE SOUP</div>
+                    <div class="menu-item" data-category="noodle-soup"> BEEF NOODLE SOUP</div>
+                    <div class="menu-item" data-category="noodle-soup"> WONTON NOODLE SOUP</div>
+                    <div class="menu-item" data-category="noodle-soup"> CHOWMIEN</div>
 
-                    <div class="menu-item" data-category="dimsum">🥟 HAKAW</div>
-                    <div class="menu-item" data-category="dimsum">🥟 CHINESE KIKIAM</div>
-                    <div class="menu-item" data-category="dimsum">🥟 CHICKEN FEET TAOSI</div>
-                    <div class="menu-item" data-category="dimsum">🥟 XIAO LONG BAO (3PCS)</div>
-                    <div class="menu-item" data-category="dimsum">🥟 PORK & SHRIMP</div>
-                    <div class="menu-item" data-category="dimsum">🥟 JAPANESE SIOMAI</div>
-                    <div class="menu-item" data-category="dimsum">🥟 SHARK'S FIN</div>
-                    <div class="menu-item" data-category="dimsum">🥟 PORK & VEGGI DUMPLING</div>
-                    <div class="menu-item" data-category="dimsum">🥟 SIOPAO ASADO</div>
+                    <div class="menu-item" data-category="dimsum"> HAKAW</div>
+                    <div class="menu-item" data-category="dimsum"> CHINESE KIKIAM</div>
+                    <div class="menu-item" data-category="dimsum"> CHICKEN FEET TAOSI</div>
+                    <div class="menu-item" data-category="dimsum"> XIAO LONG BAO (3PCS)</div>
+                    <div class="menu-item" data-category="dimsum"> PORK & SHRIMP</div>
+                    <div class="menu-item" data-category="dimsum"> JAPANESE SIOMAI</div>
+                    <div class="menu-item" data-category="dimsum"> SHARK'S FIN</div>
+                    <div class="menu-item" data-category="dimsum"> PORK & VEGGI DUMPLING</div>
+                    <div class="menu-item" data-category="dimsum"> SIOPAO ASADO</div>
 
 
-                    <div class="menu-item" data-category="ramen">🧋 SUPER CHASHU RAMEN</div>
-                    <div class="menu-item" data-category="ramen">🥤 RED RAMEN</div>
-                    <div class="menu-item" data-category="ramen">🥤 TANTANMEN</div>
-                    <div class="menu-item" data-category="ramen">🥤 BLACK GARLIC RAMEN</div>
-                    <div class="menu-item" data-category="ramen">🥤 TONKOTSU RAMEN</div>
+                    <div class="menu-item" data-category="ramen"> SUPER CHASHU RAMEN</div>
+                    <div class="menu-item" data-category="ramen"> RED RAMEN</div>
+                    <div class="menu-item" data-category="ramen"> TANTANMEN</div>
+                    <div class="menu-item" data-category="ramen"> BLACK GARLIC RAMEN</div>
+                    <div class="menu-item" data-category="ramen"> TONKOTSU RAMEN</div>
 
-                    <div class="menu-item" data-category="rice-meal">🥤 KATSU CURRY</div>
-                    <div class="menu-item" data-category="rice-meal">🥤 KATSUDON</div>
-                    <div class="menu-item" data-category="rice-meal">🥤 KARAAGE DON</div>
-                    <div class="menu-item" data-category="rice-meal">🥤 SWEET & SOUR SHRIMP</div>
-                    <div class="menu-item" data-category="rice-meal">🥤 SWEET & SOUR FISH FILLET</div>
+                    <div class="menu-item" data-category="rice-meal"> KATSU CURRY</div>
+                    <div class="menu-item" data-category="rice-meal"> KATSUDON</div>
+                    <div class="menu-item" data-category="rice-meal"> KARAAGE DON</div>
+                    <div class="menu-item" data-category="rice-meal"> SWEET & SOUR SHRIMP</div>
+                    <div class="menu-item" data-category="rice-meal"> SWEET & SOUR FISH FILLET</div>
 
-                    <div class="menu-item" data-category="sides">🥤 KARAAGE</div>
-                    <div class="menu-item" data-category="sides">🥤 GYOZA (6PCS)</div>
-                    <div class="menu-item" data-category="sides">🥤 GYOZA (4PCS)</div>
+                    <div class="menu-item" data-category="sides"> KARAAGE</div>
+                    <div class="menu-item" data-category="sides"> GYOZA (6PCS)</div>
+                    <div class="menu-item" data-category="sides"> GYOZA (4PCS)</div>
 
                 </div>
 
             </div>    
+
+        </div>
+    </div>
+
+    <div class="loc-page" id="loc">
+        <div class="loc-page-background">
+            <img src="/xlre-images/katsu.png" class="katsu" alt="picture of katsudon">
+            <img src="/xlre-images/blackgarlic.png" class="black-garlic" alt="black garlic ramen">
+            <div class="loc-container">
+                    <h1 class="loc-title">We are located at: </h1>
+                    <h2 class="loc-subtext">XiaoLong & Ramen Express, Hangga St, Bulihan, Malolos, 3000 Bulacan</h2>
+                <div class="loc-images">
+                    <img src="/xlre-images/xlre-building.png" id="xlre-b" alt="XiaoLong and Ramen Express Building">
+                    <img src="/xlre-images/xlre-loc.png" id="xlre-m" alt="XiaoLong and Ramen Express Maps">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-page">
+        <div class="contact-layout">
+
+            <div class="contact-text">
+
+            </div>
+            <div class="contact-image">
+                <img src="/xlre-images/xiaolongfam.jpg" class="xiaolongfam" alt="XiaoLong Fam">
+            </div>
 
         </div>
     </div>
