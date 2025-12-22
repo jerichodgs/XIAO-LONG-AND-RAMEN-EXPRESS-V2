@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,28 +11,54 @@
     
     <title>XiaoLong & Ramen Express</title>
 </head>
+
 <body>
+    <header>
     <nav id="navbar">
 
         <div class="xlre-brand">
-            <a href="#"><img src="xlre-images/xiaologo.png" class="xlre-logo"></a>
-            <a href="#" class="xlre-title">XiaoLong & Ramen Express</a>
+            <a href="#home" class="xlre-logo-container"><img src="xlre-images/xiaologo.png" class="xlre-logo"></a>
+            <a href="#home" class="xlre-title">XiaoLong & Ramen Express</a>
         </div>
 
-        <div class="nav-links">
-            <a href="#" class="nav-btns">Home</a>
-            <a href="#menu" class="nav-btns">Menu</a>
-            <a href="#loc" class="nav-btns">Location</a>
-            <a href="#contact" class="nav-btns">Contact</a>
-            <a href="#review" class="nav-btns">Reviews</a>
-            <a href="https://www.facebook.com/profile.php?id=100091732257278" target="blank" class="nav-btns">
+        <ul class="nav-links">
+            <li class="nav-menu">
+                <a href="#home" class="nav-btns">Home</a>
+            </li>
+
+            <li class="nav-menu">
+                <a href="#menu" class="nav-btns">Menu</a>
+            </li>
+
+            <li class="nav-menu">
+                <a href="#loc" class="nav-btns">Location</a>
+            </li>
+
+            <li class="nav-menu">
+                <a href="#contact" class="nav-btns">Contact</a>
+            </li>
+
+            <li class="nav-menu">
+                <a href="#review" class="nav-btns">Reviews</a>
+            </li>
+
+            <li class="nav-menu">
+                <a href="https://www.facebook.com/profile.php?id=100091732257278" target="blank" class="nav-btns">
                 <button class="nav-order">
                     <img src="/xlre-images/noodle-bowl.png">
                 </button>
             </a>
+            </li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
 
     </nav>
+    </header>
     
     <div class="hero-page" id="home">
         <div class="hero-text">
@@ -115,10 +142,10 @@
     <div class="loc-page" id="loc">
         <div class="loc-page-background">
             <div class="bg-images">
-                <img src="/xlre-images/katsu.png" class="katsu" alt="picture of katsudon">
-                <img src="/xlre-images/blackgarlic.png" class="black-garlic" alt="black garlic ramen">
-                <img src="/xlre-images/superchashu.png" class="super-chashu" alt="super chashu ramen">
-                <img src="/xlre-images/redramen.png" class="redramen" alt="Naijiro Red Ramen">
+                <img src="/xlre-images/katsu.png" id="katsu" alt="picture of katsudon">
+                <img src="/xlre-images/blackgarlic.png" id="black-garlic" alt="black garlic ramen">
+                <img src="/xlre-images/superchashu.png" id="super-chashu" alt="super chashu ramen">
+                <img src="/xlre-images/redramen.png" id="red-ramen" alt="Naijiro Red Ramen">
             </div>
 
             <div class="loc-container">
@@ -159,42 +186,44 @@
     </div>
 
     <div class="review-page" id="review">
-        <h1 class="review-title">Reviews</h1>
-        <div class="review-cards">
+        <div class="review-layout">
+            <h1 class="review-title">Reviews</h1>
+            <div class="review-cards">
 
-            <div class="card" id="card1">
-                <p class="review-content">"Pang masa ung presyo niya pero pang mamahaling resto ang quality."</p>
-                <div class="image-name">
-                    <img src="/xlre-images/kuyapolzy.jpg" class="review-images">
-                    <div class="name-role">
-                        <p class="reviewer-name">Kuya Polzy</p>
-                        <p class="reviewer-role">Food Blogger</p>
+                <div class="card" id="card1">
+                    <p class="review-content">"Pang masa ung presyo niya pero pang mamahaling resto ang quality."</p>
+                    <div class="image-name">
+                        <img src="/xlre-images/kuyapolzy.jpg" class="review-images">
+                        <div class="name-role">
+                            <p class="reviewer-name">Kuya Polzy</p>
+                            <p class="reviewer-role">Food Blogger</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card" id="card2">
-                <p class="review-content">“Mahahanlintulad ang lasa sa mga commercial ramen at dimsum na atin nang nasubukan!”</p>
-                <div class="image-name">
-                    <img src="/xlre-images/pinoybudg.jpg" class="review-images">
-                    <div class="name-role">
-                        <p class="reviewer-name">Pinoy Budgetarian</p>
-                        <p class="reviewer-role">Food and Travel Blogger</p>
+                <div class="card" id="card2">
+                    <p class="review-content">"Mahahanlintulad ang lasa sa mga commercial ramen at dimsum na atin nang nasubukan!"</p>
+                    <div class="image-name">
+                        <img src="/xlre-images/pinoybudg.jpg" class="review-images">
+                        <div class="name-role">
+                            <p class="reviewer-name">Pinoy Budgetarian</p>
+                            <p class="reviewer-role">Food and Travel Blogger</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card" id="card3">
-                <p class="review-content">“Ito na ata ang pinaka murang Japanese at Chinese foods na nakainan ko!”</p>
-                <div class="image-name">
-                    <img src="/xlre-images/papabuds.jpg" class="review-images">
-                    <div class="name-role">
-                        <p class="reviewer-name">Papa Bud's</p>
-                        <p class="reviewer-role">Food and Travel Blogger</p>
+                <div class="card" id="card3">
+                    <p class="review-content">"Ito na ata ang pinaka murang Japanese at Chinese foods na nakainan ko!"</p>
+                    <div class="image-name">
+                        <img src="/xlre-images/papabuds.jpg" class="review-images">
+                        <div class="name-role">
+                            <p class="reviewer-name">Papa Bud's</p>
+                            <p class="reviewer-role">Food and Travel Blogger</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
@@ -202,9 +231,9 @@
             <p>XiaoLong and Ramen Express Official Website</p>
             <p style="color: rgb(255, 255, 255); margin-right: 150px;">© 2025 KoDevs. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100091732257278" ><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100091732257278" ><i class="fab fa-facebook-f" id="fblogo"></i></a>
                 <a href="https://www.instagram.com/ramennaijiromalolos/" target="_blank" class="icon-margin"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" id="yt-icon"><i class="fab fa-youtube"></i></a>
             </div>
     </footer>
     <script src = "script.js"></script>
