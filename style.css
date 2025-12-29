@@ -1119,13 +1119,12 @@ nav {
 
 @media (max-width: 480px) {
 
-  
-  .xlre-brand {
+    .xlre-brand {
     margin-left: 10px;
-  }
+    }
 
     .hero-page {
-      height: 100vh;
+        height: 100vh;
     }
 
     .hero-xlre-title {
@@ -1156,9 +1155,39 @@ nav {
         box-sizing: border-box;
     }
 
+    .category-buttons {
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 10px 0;
+    }
+
+    .category-buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-buttons::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        pointer-events: none;
+        z-index: 2;
+    }
+
     .category-btn {
-        padding: 5px 8px;
-        font-size: 0.6em;
+        display: inline-block;
+        overflow: visible;
+        padding: 8px 12px;
+        font-size: 0.7em;
+        white-space: nowrap;
+        margin-right: 2px;
     }
 
     .menu-container {
