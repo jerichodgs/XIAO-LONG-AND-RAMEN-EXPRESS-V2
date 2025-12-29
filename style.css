@@ -1,6 +1,8 @@
 /* GLOBAL RESETS AND BODY STYLES */
 
 html {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
@@ -1147,7 +1149,8 @@ nav {
     }
 
     .menu-item {
-        width: 200px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .category-btn {
@@ -1159,6 +1162,7 @@ nav {
         padding: 20px;
         max-width: 260px;
         height: 500px;
+        margin: 0 auto;
     }
 
     .loc-page {
