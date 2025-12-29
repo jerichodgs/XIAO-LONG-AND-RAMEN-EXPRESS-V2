@@ -1146,7 +1146,9 @@ nav {
 
     .menu-page-background h1 {
         font-size: 2em;
-        margin: 40px auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .menu-item {
